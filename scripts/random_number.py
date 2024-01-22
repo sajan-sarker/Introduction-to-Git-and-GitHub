@@ -2,10 +2,7 @@
 
 import random
 
-a = 0
-b = 9
-
-result = random.randint(a, b)
+result = random.randint(0, 9)
 
 print(result)
 
