@@ -27,9 +27,9 @@ def check_no_network():
     '''Return True if it fails to resolve Google's URL, False oherwise'''
     try:
         socket.gethostname("www.google.com")
-        return False
-    except:
         return True
+    except:
+        return False
 def main():
     checks = [
         (check_reboot, "Pending Reboot"),
